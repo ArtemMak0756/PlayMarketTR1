@@ -81,16 +81,6 @@ contactForm.addEventListener('submit', (e) => {
     // For now, we'll just prevent the default behavior as requested
 });
 
-// Add loading animation for images
-const images = document.querySelectorAll('img');
-images.forEach(img => {
-    img.addEventListener('load', () => {
-        img.style.opacity = '1';
-    });
-    img.style.opacity = '0';
-    img.style.transition = 'opacity 0.3s ease-in-out';
-});
-
 // Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
